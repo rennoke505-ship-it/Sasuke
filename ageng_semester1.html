@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentasi Perkenalan Diri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .slide {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+    .active {
+      display: block;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 15px 0;
+      border: 4px solid #000;
+    }
+    .controls {
+      margin-top: 20px;
+    }
+    button {
+      background: #0056b3;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #003f7f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1: Judul -->
+  <div class="slide active">
+    <h1>Presentasi</h1>
+    <p>Selamat Datang!</p>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <!-- Slide 2: Profil 1 -->
+  <div class="slide">
+    <h2>Profil 1</h2>
+    <img src="https://uploads.onecompiler.io/43ybcu4ht/43ybcuc5v/751091.jpg" alt="Foto Profil 1">
+    <p>Nama: Ageng Rahmatulloh</p>
+    <p>Hobi: sepak bola</p>
+    <p>kelas: X tkj 1</p>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <!-- Slide 3: Profil 2 -->
+  <div class="slide">
+    <h2>Profil 2</h2>
+    <img src="https://uploads.onecompiler.io/43ybc7gc8/43ybdye83/1000019511.jpg" alt="Foto Profil 2">
+    <p>Nama: Alvino Fahrul</p>
+    <p>Hobi: mancing</p>
+    <p>kelas: X tkj 1</p>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <!-- Slide 4: Profil 3 -->
+  <div class="slide">
+    <h2>Profil 3</h2>
+    <img src="https://uploads.onecompiler.io/43ybc7gc8/43ybe3fdb/1000019520.jpg" alt="Foto Profil 3">
+    <p>Nama: adlyansah</p>
+    <p>Hobi: sepak bola</p>
+    <p>kelas: X tkj 1</p>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <!-- Slide 5: Materi 1 -->
+  <div class="slide">
+    <h2>1 contoh hewan ovovivipar</h2>
+    <p>Ikan hiu merupakan salah satu contoh hewan ovovivipar, artinya ia menghasilkan telur tetapi telur tersebut tidak dikeluarkan ke luar tubuh induknya.
+</p>
+    <img src="https://uploads.onecompiler.io/43ybc7gc8/43ye9dqju/1000020069.jpg"=>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <!-- Slide 6: Materi 2 -->
+  <div class="slide">
+    <h2>berikut penjelasanya</h2>
+    <p>1. Proses pembuahan
+
+Pembuahan terjadi secara internal (di dalam tubuh betina).
+
+
+2. Perkembangan embrio
+
+Telur hiu tetap berada di dalam tubuh induk betina.
+
+Embrio mendapatkan makanan dari yolk (kuning telur), bukan dari induknya.
+
+
+3. Kelahiran anak hiu
+
+Telur akan menetas di dalam tubuh induk.
+
+Anak hiu kemudian dilahirkan dalam keadaan sudah hidup dan dapat berenang.
+
+
+4. Keuntungan cara ini
+
+Anak lebih terlindungi dibanding jika telur ditinggalkan di luar.
+</p>
+<img src="https://uploads.onecompiler.io/43ybc7gc8/43ye9dqju/WhatsApp%20Image%202025-10-01%20at%2023.53.20.jpeg"
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+<!-- Slide 7: Materi 3 -->
+  <div class="slide">
+    <h2>sekian dari kelompok kami</h2>
+    <p>terimakasih</p>
+    <div class="controls">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    function prevSlide() {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    }
+    
+  </script>
+
+</body>
+</html>

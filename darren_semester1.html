@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PUMA, STEGOSAURUS & SASUKE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #000000;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0c50b5;
+        }
+
+        /* Sembunyikan semua konten awalnya */
+        .content {
+            display: none;
+        }
+
+        /* Konten aktif */
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- PUMA SPEEDCAT -->
+    <div id="puma" class="content active">
+        <img src="https://uploads.onecompiler.io/43ybc6bje/449ys7msj/1000307626.jpg" alt="Puma Speedcat">
+        <h1>PUMA SPEEDCAT</h1>
+        <p>
+            Puma merupakan perusahaan yang dikenal luas dalam dunia sepak bola karena menjadi sponsor
+            pemain sepak bola terkenal seperti Pelé, Eusébio, Johan Cruijff, Diego Maradona, Neymar,
+            hingga Antoine Griezmann.
+        </p>
+        <p>
+            Puma juga mensponsori klub sepak bola ternama seperti AC Milan, Borussia Dortmund,
+            PSV Eindhoven, dan Manchester City, serta tim nasional dari berbagai negara seperti
+            Mesir, Ghana, Malaysia, Senegal, Swiss, dan Maroko.
+        </p>
+        <p>
+            Salah satu produk ikonik Puma adalah sepatu yang dirancang khusus untuk atlet motocross
+            Travis Pastrana, serta sepatu basket berbahan kulit yang diperkenalkan pada tahun 1968.
+        </p>
+        <p>
+            Selain sepatu olahraga, Puma juga memproduksi pakaian olahraga hasil kolaborasi dengan
+            perancang busana seperti Lamine Kouyate dan Amy Garbers. Pada tahun 2007, Puma resmi
+            menjadi anak perusahaan dari PPR, perusahaan holding asal Prancis.
+        </p>
+        <div class="buttons">
+            <button onclick="showContent('stegosaurus')">Next</button>
+        </div>
+    </div>
+
+    <!-- STEGOSAURUS -->
+    <div id="stegosaurus" class="content">
+        <img src="https://uploads.onecompiler.io/43ybc6bje/449yqps9h/1000307746.jpg" alt="Stegosaurus">
+        <h1>STEGOSAURUS</h1>
+        <p>
+            <strong>Stegosaurus</strong> adalah dinosaurus herbivora yang hidup pada periode
+            Jurassic Akhir, sekitar 155–150 juta tahun yang lalu. Dinosaurus ini terkenal
+            karena lempengan besar berbentuk segitiga di sepanjang punggungnya serta ekor
+            berduri yang digunakan untuk pertahanan diri.
+        </p>
+        <p>
+            Stegosaurus memiliki tubuh besar dengan kaki belakang lebih panjang dari kaki
+            depan, sehingga posisi kepalanya cenderung lebih rendah. Dinosaurus ini memakan
+            tumbuhan rendah seperti pakis dan semak-semak.
+        </p>
+        <p>
+            Meskipun berukuran besar, Stegosaurus memiliki otak yang relatif kecil dibandingkan
+            ukuran tubuhnya. Namun, senjata alaminya membuatnya mampu melindungi diri dari
+            predator besar seperti Allosaurus.
+        </p>
+        <div class="buttons">
+            <button onclick="showContent('puma')">Back</button>
+            <button onclick="showContent('sasuke')">Next</button>
+        </div>
+    </div>
+
+    <!-- SASUKE UCHIHA -->
+    <div id="sasuke" class="content">
+        <img src="https://uploads.onecompiler.io/43ybc6bje/449yrnb5g/1000307670.jpg" alt="Sasuke Uchiha">
+        <h1>SASUKE UCHIHA</h1>
+        <p>
+            <strong>Sasuke Uchiha</strong> (団扇 佐助, <em>Uchiha Sasuke</em>) adalah salah satu anggota terakhir
+            <a href="https://naruto.fandom.com/id/wiki/Klan_Uchiha" target="_blank">klan Uchiha</a>
+            yang masih bertahan dari
+            <a href="https://naruto.fandom.com/id/wiki/Konohagakure" target="_blank">Konohagakure</a>.
+            Setelah kakaknya, Itachi, membantai klan mereka, Sasuke berusaha mewujudkan misinya
+            untuk membalas dendam dengan membunuh Itachi.
+        </p>
+        <p>
+            Dia dimasukkan ke
+            <a href="https://naruto.fandom.com/id/wiki/Tim_7" target="_blank">Tim 7</a>
+            saat menjadi seorang ninja dan, melalui persaingan dengan rival sekaligus sahabatnya,
+            <a href="https://naruto.fandom.com/id/wiki/Naruto_Uzumaki" target="_blank">Naruto Uzumaki</a>,
+            Sasuke mulai mengembangkan keahliannya. Tidak puas dengan kemajuannya, ia meninggalkan
+            Konoha demi memperoleh kekuatan yang dibutuhkan untuk membalas dendam.
+        </p>
+        <p>
+            Tahun-tahun dalam pencarian balas dendam membuat Sasuke semakin terbebani,
+            bertindak tidak masuk akal, dan mengasingkan dirinya dari orang lain,
+            hingga menjadikannya penjahat internasional.
+        </p>
+        <p>
+            Setelah membuktikan dirinya sebagai penolong dalam mengakhiri
+            <a href="https://naruto.fandom.com/id/wiki/Perang_Dunia_Shinobi_Keempat" target="_blank">
+            Perang Dunia Shinobi Keempat</a>
+            dan dibebaskan oleh Naruto, Sasuke memutuskan kembali ke Konoha.
+            Ia mengabdikan hidupnya untuk membantu melindungi desa serta penduduknya.
+        </p>
+        <div class="buttons">
+            <button onclick="showContent('stegosaurus')">Back</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showContent(id) {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => content.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

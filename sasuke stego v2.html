@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PUMA, STEGOSAURUS & SASUKE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0c50b5;
+        }
+
+        .back-profile {
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .back-profile:hover {
+            background-color: #333;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ================= PUMA ================= -->
+<div id="puma" class="content active">
+    <img src="https://uploads.onecompiler.io/43ybc6bje/449ys7msj/1000307626.jpg" alt="Puma Speedcat">
+    <h1>PUMA SPEEDCAT</h1>
+
+    <p>
+        Puma merupakan perusahaan olahraga multinasional asal Jerman yang dikenal luas
+        dalam dunia sepak bola. Puma menjadi sponsor berbagai pemain sepak bola legendaris
+        seperti Pelé, Eusébio, Johan Cruyff, Diego Maradona, hingga pemain modern seperti
+        Neymar Jr. dan Antoine Griezmann.
+    </p>
+
+    <p>
+        Selain pemain, Puma juga mensponsori klub-klub besar dunia seperti AC Milan,
+        Borussia Dortmund, PSV Eindhoven, dan Manchester City. Di tingkat internasional,
+        Puma menjadi sponsor tim nasional Mesir, Ghana, Malaysia, Senegal, Swiss, dan Maroko.
+    </p>
+
+    <p>
+        Salah satu produk ikonik Puma adalah sepatu balap Speedcat yang terinspirasi dari
+        dunia motorsport. Puma juga pernah merancang sepatu khusus untuk atlet motocross
+        Travis Pastrana serta sepatu basket berbahan kulit yang diperkenalkan pada tahun 1968.
+    </p>
+
+    <p>
+        Selain sepatu, Puma memproduksi pakaian olahraga dan gaya hidup hasil kolaborasi
+        dengan perancang busana terkenal seperti Lamine Kouyate dan Amy Garbers. Pada tahun
+        2007, Puma resmi menjadi anak perusahaan dari PPR (sekarang Kering), perusahaan
+        holding asal Prancis.
+    </p>
+
+    <div class="buttons">
+        <a href="profil.html" class="back-profile">Back to Profil</a>
+        <button onclick="showContent('stegosaurus')">Next</button>
+    </div>
+</div>
+
+<!-- ================= STEGOSAURUS ================= -->
+<div id="stegosaurus" class="content">
+    <img src="https://uploads.onecompiler.io/43ybc6bje/449yqps9h/1000307746.jpg" alt="Stegosaurus">
+    <h1>STEGOSAURUS</h1>
+
+    <p>
+        <strong>Stegosaurus</strong> adalah dinosaurus herbivora yang hidup pada periode
+        Jurassic Akhir, sekitar 155–150 juta tahun yang lalu. Dinosaurus ini terkenal
+        karena lempengan besar berbentuk segitiga yang tersusun di sepanjang punggungnya.
+    </p>
+
+    <p>
+        Selain lempengan, Stegosaurus memiliki ekor berduri yang disebut
+        <em>thagomizer</em>, yang digunakan sebagai senjata untuk mempertahankan diri
+        dari predator. Senjata ini sangat efektif melawan dinosaurus karnivora besar
+        seperti Allosaurus.
+    </p>
+
+    <p>
+        Stegosaurus memiliki tubuh besar dengan kaki belakang lebih panjang dibandingkan
+        kaki depan, sehingga posisi kepalanya cenderung lebih rendah. Dinosaurus ini
+        memakan tumbuhan rendah seperti pakis, lumut, dan semak-semak purba.
+    </p>
+
+    <p>
+        Meskipun tubuhnya besar, Stegosaurus memiliki otak yang relatif kecil. Namun,
+        struktur tubuh dan sistem pertahanannya membuat dinosaurus ini mampu bertahan
+        hidup di lingkungannya.
+    </p>
+
+    <div class="buttons">
+        <a href="profil.html" class="back-profile">Back to Profil</a>
+        <button onclick="showContent('puma')">Back</button>
+        <button onclick="showContent('sasuke')">Next</button>
+    </div>
+</div>
+
+<!-- ================= SASUKE ================= -->
+<div id="sasuke" class="content">
+    <img src="https://uploads.onecompiler.io/43ybc6bje/449yrnb5g/1000307670.jpg" alt="Sasuke Uchiha">
+    <h1>SASUKE UCHIHA</h1>
+
+    <p>
+        <strong>Sasuke Uchiha</strong> (団扇 佐助) adalah salah satu anggota terakhir
+        klan Uchiha dari desa Konohagakure. Setelah kakaknya, Itachi Uchiha,
+        membantai seluruh klan mereka, Sasuke tumbuh dengan tujuan membalas dendam.
+    </p>
+
+    <p>
+        Sasuke menjadi anggota Tim 7 bersama Naruto Uzumaki dan Sakura Haruno
+        di bawah bimbingan Kakashi Hatake. Persaingan dengan Naruto mendorong Sasuke
+        untuk terus mengembangkan kekuatannya.
+    </p>
+
+    <p>
+        Karena merasa kekuatannya tidak berkembang cukup cepat, Sasuke meninggalkan
+        Konoha demi mengejar kekuatan dari Orochimaru. Keputusan ini membuatnya
+        semakin terisolasi dan dianggap sebagai pengkhianat.
+    </p>
+
+    <p>
+        Setelah Perang Dunia Shinobi Keempat berakhir, Sasuke membantu menyelamatkan
+        dunia shinobi. Ia akhirnya diampuni dan memilih menjalani hidup sebagai ninja
+        pengembara untuk melindungi desa dari ancaman yang datang dari bayangan.
+    </p>
+
+    <div class="buttons">
+        <a href="profil.html" class="back-profile">Back to Profil</a>
+        <button onclick="showContent('stegosaurus')">Back</button>
+    </div>
+</div>
+
+</div>
+
+<script>
+function showContent(id) {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(c => c.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
